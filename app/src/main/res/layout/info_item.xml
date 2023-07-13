@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="85dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="330dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/shape_main"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/ivIcon_info"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent">-->
+
+    <TextView
+        android:id="@+id/tvTitle_info"
+        android:layout_width="330dp"
+        android:layout_height="42.5dp"
+        android:padding="5dp"
+        android:text="title:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvContent_info"
+        android:layout_width="330dp"
+        android:layout_height="42.5dp"
+        android:hint="null"
+        android:padding="5dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle_info" />
+<!--        </LinearLayout>-->
+
+        <ImageView
+            android:id="@+id/ivIcon_info"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+<!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
